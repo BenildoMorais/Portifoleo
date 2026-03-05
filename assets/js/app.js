@@ -16,7 +16,8 @@ contactForm.addEventListener('submit', (e)=>{
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://servidor-de-email.vercel.app/?vercelToolbarCode=VickDAxzcL3Krjb:9000/');
+   xhr.open('POST', 'https://servidor-de-email.vercel.app/?vercelToolbarCode=VickDAxzcL3Krjb:9000/');
+   /* xhr.open('POST', 'https://servidor-de-email.vercel.app:9000/');*/
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function(){
         console.log(xhr.responseText);
